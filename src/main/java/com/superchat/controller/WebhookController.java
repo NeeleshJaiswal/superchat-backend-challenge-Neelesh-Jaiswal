@@ -11,8 +11,7 @@ public class WebhookController {
 
     @GetMapping("/webhook")
     public ResponseEntity<String> respondToWebhook() {
-        System.out.println("This is so cool");
-        return ResponseEntity.ok("Hello from Twilio!");
+        return ResponseEntity.ok("Hello from external webhook!");
     }
 
 

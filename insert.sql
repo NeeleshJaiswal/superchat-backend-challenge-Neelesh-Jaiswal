@@ -17,4 +17,7 @@ INSERT INTO message_status (name) VALUES ('Delivered');
 INSERT INTO message_status (name) VALUES ('Read');
 
 INSERT INTO users (firstname, lastname, client_id) VALUES ('Neelesh', 'Jaiswal', 1);
-INSERT INTO users (firstname, lastname, client_id) VALUES ('Aafreen', 'Khan', 2);
+INSERT INTO users (firstname, lastname, client_id) VALUES ('Aafreen', 'Khan', 1);
+
+INSERT INTO conversations (id, end_date, start_date, contact_id, user_id)
+VALUES (1, '2008-11-11', '2008-11-11', 1, 3);

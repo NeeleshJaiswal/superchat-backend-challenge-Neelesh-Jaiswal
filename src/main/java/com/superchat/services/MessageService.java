@@ -36,7 +36,7 @@ public class MessageService {
         message.setSender(messageSenderService.findByType(message.getSender().getType()));
 
         Contact contact = contactService.getContactById(messageDto.getContactId());
-        message.setText(replacePlaceHolders(message.getText(), contact.getFirstName(), "100000 $"));
+        message.setText(replacePlaceHolders(message.getText(), contact.getFirstName(), "1000 \\$"));
         messageRepository.save(message);
 
         Conversation conversation = messageDto.getMessage().getConversation();
